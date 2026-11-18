@@ -48,10 +48,22 @@
   .lead { color: var(--sub); margin-top: 0; }
   .note { color: var(--sub); font-size: 0.9rem; }
   hr { border: none; border-top: 1px solid var(--line); margin: 56px 0 24px; }
+  /* ページ上部の「英語版へ」のリンク(右寄せの小さな枠) */
+  .lang-link { text-align: right; margin: 0 0 16px; font-size: 0.9rem; }
+  .lang-link a {
+    display: inline-block;
+    padding: 2px 12px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    text-decoration: none;
+  }
 </style>
 </head>
 <body>
 <main>
+
+<!-- 英語圏の人がすぐ英語の説明へ移れるように、ページ下部の英語版へ飛ぶリンクを置く -->
+<p class="lang-link" lang="en"><a href="#english">English: Support &amp; Privacy Policy ↓</a></p>
 
 <h1>Timing Stop</h1>
 <p class="lead">Apple Watch 用ワンタップ・タイミングゲーム</p>
@@ -110,10 +122,34 @@
 
 <p class="note">制定日: 2026年11月13日</p>
 
-<h2 id="english">Privacy Policy (English summary)</h2>
+<!-- 英語の部分(読み上げ機能が英語で読むように lang="en" を付ける) -->
+<section lang="en">
+<h2 id="english">Support (English)</h2>
+
+<h3>How to Play</h3>
+<ul>
+  <li>Tap the screen to start.</li>
+  <li>A marker slides back and forth. Tap again the moment it passes through the green zone to stop it.</li>
+  <li>The closer you stop it to the center of the zone, the higher your score (up to 100 points).</li>
+  <li>Score 90 or higher to earn coins.</li>
+  <li>Collect 100 coins to unlock EX mode, where the green zone moves to a new spot every time.</li>
+</ul>
+
+<h3>FAQ</h3>
+<p><strong>My best score and coins are gone.</strong><br>
+Your best score and coins are saved only on your Apple Watch. If you delete the app, this data is deleted too, and it cannot be restored.</p>
+<p><strong>Is there an iPhone app?</strong><br>
+No. Timing Stop runs on Apple Watch alone.</p>
+
+<h3>Contact</h3>
+<p>For bug reports, questions, or requests, please email <a href="mailto:maruca12530@gmail.com">maruca12530@gmail.com</a>.</p>
+<p class="note">When reporting a bug, it helps to include your Apple Watch model, your watchOS version, and what happened. Replies may take some time.</p>
+
+<h2 id="privacy-en">Privacy Policy (English summary)</h2>
 <p>Timing Stop does not collect any personal information. The app does not connect to the internet, show ads, track you, or include third-party analytics. Your game progress, including best scores, coins, and unlocked modes, is stored only on your Apple Watch and is deleted when you uninstall the app.</p>
 <p>If you have enabled sharing with app developers in your device settings, Apple may provide the developer with anonymous, aggregated statistics. This data cannot be used to identify you.</p>
 <p>Contact: <a href="mailto:maruca12530@gmail.com">maruca12530@gmail.com</a></p>
+</section>
 
 <hr>
 <p class="note">Timing Stop</p>
