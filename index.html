@@ -48,15 +48,12 @@
   .lead { color: var(--sub); margin-top: 0; }
   .note { color: var(--sub); font-size: 0.9rem; }
   hr { border: none; border-top: 1px solid var(--line); margin: 56px 0 24px; }
-  /* ページ上部の「英語版へ」のリンク(右寄せの小さな枠) */
+  /* プライバシーポリシーの制定日(右寄せ) */
+  .date { text-align: right; margin-top: 16px; }
+  /* ページ下部のアプリ名とコピーライト(行間を詰める) */
+  footer p { margin: 0; }
+  /* ページ上部の「英語版へ」のリンク(右寄せ。見た目はふつうの文字リンク) */
   .lang-link { text-align: right; margin: 0 0 16px; font-size: 0.9rem; }
-  .lang-link a {
-    display: inline-block;
-    padding: 2px 12px;
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    text-decoration: none;
-  }
 </style>
 </head>
 <body>
@@ -120,7 +117,7 @@
 <h3>お問い合わせ先</h3>
 <p>このポリシーに関するお問い合わせは、<a href="mailto:maruca12530@gmail.com">maruca12530@gmail.com</a> までお送りください。</p>
 
-<p class="note">制定日: 2026年11月13日</p>
+<p class="note date">制定日: 2026年11月13日</p>
 
 <!-- 英語の部分(読み上げ機能が英語で読むように lang="en" を付ける) -->
 <section lang="en">
@@ -149,10 +146,16 @@ No. Timing Stop runs on Apple Watch alone.</p>
 <p>Timing Stop does not collect any personal information. The app does not connect to the internet, show ads, track you, or include third-party analytics. Your game progress, including best scores, coins, and unlocked modes, is stored only on your Apple Watch and is deleted when you uninstall the app.</p>
 <p>If you have enabled sharing with app developers in your device settings, Apple may provide the developer with anonymous, aggregated statistics. This data cannot be used to identify you.</p>
 <p>Contact: <a href="mailto:maruca12530@gmail.com">maruca12530@gmail.com</a></p>
+
+<p class="note date">Effective date: November 13, 2026</p>
 </section>
 
 <hr>
+<!-- ページ下部: アプリ名とコピーライト表示 -->
+<footer>
 <p class="note">Timing Stop</p>
+<p class="note copyright">© 2026 Nobuharu Iwatsuka</p>
+</footer>
 
 </main>
 </body>
